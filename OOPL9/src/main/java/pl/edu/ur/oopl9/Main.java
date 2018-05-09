@@ -5,10 +5,8 @@
  */
 package pl.edu.ur.oopl9;
 
-/**
- *
- * @author maarchyl
- */
+import java.util.Arrays;
+import java.util.Random;
 public class Main {
 
     /**
@@ -16,6 +14,17 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+    Random r = new Random(); 
+    int [] tab = new int [100]; 
+     for (int i = 0; i < 100; i++) {
+            tab[i] = r.nextInt();
+        }
+     Arrays.sort(tab);
+    for (int i = 0; i < 100; i++) {
+        System.out.println(tab[i]) ;   
+        }
+   
+     
     }
     
 }
